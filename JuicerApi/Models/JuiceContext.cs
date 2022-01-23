@@ -11,10 +11,10 @@ namespace JuicerApi.Models
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Juice>().ToTable("dbo.tblJuice");
-            modelBuilder.Entity<Ingredient>().ToTable("dbo.tblIngredient");
-            modelBuilder.Entity<MealPlan>().ToTable("dbo.tblMealPlan");
-            modelBuilder.Entity<User>().ToTable("dbo.tblUser");
+            modelBuilder.Entity<Juice>().ToTable("tblJuice");
+            modelBuilder.Entity<Ingredient>().ToTable("tblIngredient");
+            modelBuilder.Entity<MealPlan>().ToTable("tblMealPlan");
+            modelBuilder.Entity<User>().ToTable("tblUser");
         }
 
         public DbSet<Juice> Juices { get; set; } = null!;
